@@ -5,4 +5,4 @@ class StockForm(forms.ModelForm):
 
     class Meta:
         model = Stock
-        fields = ('ID','Name', 'Product Type', 'Supplier ID','Supplier', 'Quantity','Cost Price', 'Selling Price')
+        fields = ('name', 'ptype', 'dealer_name','dealer_id', 'quantity','cost_price', 'selling_price')

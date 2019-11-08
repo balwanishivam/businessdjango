@@ -3,7 +3,7 @@
 {% block content %}
 
     <div class="buttion_place">
-        <a href="{% url 'addnew' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"> + Add Product</a>
+        <a href="{% url 'business:addnew' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"> + Add Product</a>
     </div>
 
     <table class="table table-hover">
@@ -21,7 +21,7 @@
 
             <tr>
                 <th>
-                    <a href="{% url 'detail' product.pk %}">
+                    <a href="{% url 'business:details' product.pk %}">
                         {{ product.pk }}
                     </a>
                 </th>
