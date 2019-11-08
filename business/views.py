@@ -10,7 +10,7 @@ def index(request):
     return render(request, 'business/index.html', context)
 
 
-def detail(request, pk):
+def details(request, pk):
     product = get_object_or_404(Stock, pk=pk)
     return render(request, 'business/detail.html', {'product': product})
 
@@ -31,7 +31,7 @@ def addnew(request):
             # product.description = form.cleaned_data['description']
             # product.save()
             # return redirect('detail', pk=product.pk)
-            return redirect('index')
+            return redirect('business:index')
     else:
         form = StockForm()
     return render(request, 'business/new.html', {'form': form})
