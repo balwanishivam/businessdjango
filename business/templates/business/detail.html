@@ -7,7 +7,7 @@
         <div class="buttion_place">
             <a href="{% url 'business:edit' product.pk %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"> + Edit Product</a>
         </div>
-
+        <label><h5>Product ID</h5></label>:  {{ product.pk }} <br>
        <label><h5>Name</h5></label>:  {{ product.name }} <br>
        <label><h5>Category</h5></label>: {{ product.ptype }}<br>
        <label><h5>Supplier ID</h5></label>: {{ product.dealer_id }}<br>

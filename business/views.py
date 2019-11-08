@@ -43,7 +43,7 @@ def edit(request, pk):
         form = StockForm(request.POST, instance=product)
         if form.is_valid():
             form.save()
-            return redirect('index')
+            return redirect('business/index')
     else:
         form = StockForm(instance=product)
     return render(request, 'business/edit.html', {'form': form})
