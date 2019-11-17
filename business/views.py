@@ -3,7 +3,6 @@ from django.http import Http404
 from .models import Stock
 from .forms import StockForm
 
-
 def index(request):
     products = Stock.objects.all()
     context = {'products': products}
@@ -48,5 +47,6 @@ def edit(request, pk):
         form = StockForm(instance=product)
     return render(request, 'business/edit.html', {'form': form})
 
-
+#def delete(request,pk):
+#def search(request,product):
 #

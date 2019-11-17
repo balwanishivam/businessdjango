@@ -2,7 +2,7 @@
 <h2 class="product_heder">Edit Product </h1>
 
 <div class="container col-md-10">
-    <form  method="POST">
+    <form  method="POST" action="{% url 'business:index'%}">
     {% csrf_token %}
 
       {% for field in form %}
