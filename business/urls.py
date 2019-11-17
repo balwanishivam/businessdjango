@@ -7,6 +7,7 @@ urlpatterns = [
     path('<int:pk>/', views.details,name="details"),
     path('edit/<int:pk>/',views.edit,name="edit"),
     path('addnew/',views.addnew,name="addnew"),
+    #path('delete/<int:pk>/',views.delete,name="delete")
     
     
     # url(r'^$', index, name="index"),
