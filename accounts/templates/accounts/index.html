@@ -4,8 +4,9 @@
   <div class="jumbotron">
     
     {% if user.is_authenticated %}
-        <h1>Welcome to the Bizman !</h1>
+       <h1>Welcome to the Bizman !</h1>
     {% else %}
+        <h2>Sorry Authentication failed.Try Again</h2>
         <h2>Register or Login if you'd like to</h2>
     {% endif %}
   </div>

@@ -1,6 +1,8 @@
 
 body {
   padding-top: 5rem;
+  background-image: url(Bizman-01.jpg);
+  background-size: cover;
 }
 
 .starter-template {
